@@ -1,0 +1,658 @@
+.chapter {
+    grid-column: span 2;
+    display: flex;
+    height: 65%;
+    width: 80%;
+    gap: 15rem;
+    justify-self: center;
+}
+
+.chapter-navigation-bar {
+    grid-column: span 2;
+    display: flex;
+}
+
+.chapter .chapter-image-container, .chapter .chapter-content-container {
+    margin-top: 50px;
+}
+
+.chapter .chapter-image-container {
+    display: flex;
+    justify-content: start;
+    height: 100%;
+    width: 30%;
+}
+
+.chapter .chapter-image-container > div {
+    background-color: var(--secondary-color);
+    height: 100%;
+    width: 400px;
+    position: relative;
+    margin-left: 50px;
+    box-shadow: 8px 8px 5px var(--primary-dark-accent-color);
+    display: grid;
+    place-items: center;
+}
+
+.chapter .chapter-image-container > div::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    margin-top: -50px;
+    margin-left: -50px;
+    width: 350px; /* Width of the square */
+    height: 350px; /* Height of the square, same as width to make it a square */
+    background-color: var(--primary-dark-accent-color); /* Color of the square */
+}
+
+.chapter .chapter-image-container > div > img {
+    height: 130px;
+    width: 130px;
+    object-fit: contain;
+    filter: brightness(70%);
+}
+
+.chapter .chapter-image-container > div .image-carousel {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    position: relative;
+}
+
+.chapter .chapter-image-container > div .image-carousel img {
+    height: 100%;
+    object-fit: cover;
+    width: fit-content !important;
+    filter: brightness(70%);
+}
+
+.chapter .chapter-image-container .expand-image-carousel {
+    position: absolute;
+    z-index: 1;
+    bottom: 1rem;
+    left: 1rem;
+    height: 2rem;
+    width: 2rem;
+    cursor: pointer;
+}
+
+.chapter .chapter-content-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    height: 100%;
+}
+
+.chapter .chapter-content-container .chapter-content-title {
+    font-size: 3em;
+    line-height: 4rem;
+    font-weight: 400;
+}
+
+.chapter .chapter-content-container .chapter-content-date {
+    font-weight: 400;
+}
+
+.chapter .chapter-content-container .chapter-content-date, .chapter .chapter-content-container .chapter-content-role {
+    font-size: 1.4em;
+}
+
+.chapter .chapter-content-container .chapter-content-role {
+    color: var(--tertiary-color);
+    font-weight: 700;
+}
+
+.chapter .chapter-content-container .chapter-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    /* margin-top: 1rem; */
+    position: relative;
+}
+
+.chapter .chapter-content-container .chapter-list li {
+    font-size: 1.1rem;
+}
+
+.chapter .chapter-content-list-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 100%;
+    overflow-y: auto;
+    margin-top: .6rem;
+    gap: 1rem;
+}
+
+.chapter .chapter-content-list-container .chapter-category {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.chapter .chapter-content-list-container .chapter-category .chapter-category-dot {
+    height: 5px;
+    width: 5px;
+    background-color: var(--primary-color);
+}
+
+.chapter .chapter-content-list-container .chapter-category .chapter-category-navigation-bar a {
+    margin-right: 0 .9rem;
+    margin-left: 0;
+}
+
+.chapter .chapter-content-list-container .chapter-category h4 {
+    font-weight: 600;
+}
+
+.chapter .chapter-content-list-container .chapter-summary {
+    padding: 2rem 4rem;
+    margin-bottom: .5rem;
+    background:
+        linear-gradient(to right, var(--primary-color) 2px, transparent 3px) 0 100%,
+        linear-gradient(to left, var(--primary-color) 2px, transparent 3px) 100% 0,
+        linear-gradient(to bottom, var(--primary-color) 2px, transparent 3px) 100% 0,
+        linear-gradient(to top, var(--primary-color) 2px, transparent 3px) 0 100%;
+    background-repeat: no-repeat;
+    background-size: 60px 30px;
+}
+
+.chapter .chapter-content-list-container .chapter-summary p {
+    color: var(--primary-color);
+    font-weight: 300;
+    text-transform: none;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.chapter .chapter-content-list-container .chapter-file {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    background:
+        linear-gradient(to right, var(--primary-color) 2px, transparent 3px) 0 0,
+        linear-gradient(to right, var(--primary-color) 2px, transparent 3px) 0 100%,
+        linear-gradient(to left, var(--primary-color) 2px, transparent 3px) 100% 0,
+        linear-gradient(to left, var(--primary-color) 2px, transparent 3px) 100% 100%,
+        linear-gradient(to bottom, var(--primary-color) 2px, transparent 3px) 0 0,
+        linear-gradient(to bottom, var(--primary-color) 2px, transparent 3px) 100% 0,
+        linear-gradient(to top, var(--primary-color) 2px, transparent 3px) 0 100%,
+        linear-gradient(to top, var(--primary-color) 2px, transparent 3px) 100% 100%;
+    background-repeat: no-repeat;
+    background-size: 60px 30px;
+}
+
+.chapter .chapter-content-list-container .chapter-file img {
+    width: 3rem;
+    height: 3rem;
+}
+
+.chapter-content-list-container::-webkit-scrollbar { 
+    width: .3rem;
+}
+
+.chapter-content-list-container::-webkit-scrollbar-track { 
+    background: var(--primary-dark-accent-color);
+}
+
+.chapter-content-list-container::-webkit-scrollbar-thumb { 
+    background: var(--primary-color);
+}
+
+.chapter-content-list-container::-webkit-scrollbar-thumb:hover { 
+    background: var(--tertiary-color);
+}
+
+.chapter-content-list-container::-webkit-scrollbar-button { 
+    display: none;
+}
+
+.chapter-image-container .splide {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.chapter-image-container .splide .splide__track {
+    width: 100%;
+    height: 100%;
+}
+
+.chapter-image-container .splide .splide__track .splide__list .splide__slide {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: initial;
+}
+
+.chapter-image-container .splide .splide__track .splide__list .splide__slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(60%);
+}
+
+.modal {
+    display: flex;
+    opacity: 0;
+    z-index: -1;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: hidden; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.9); 
+}
+ 
+.close {
+    position: absolute;
+    right: 2rem;
+    top: 2rem;
+    cursor: pointer;
+}
+
+.close img {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+  
+.modal-content {
+    width: 80%;
+    height: 70%;
+}
+
+.modal-certificate {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.modal-certificate img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+.modal-splide {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin-bottom: 1rem;
+    margin-top: -1rem;
+}
+  
+.modal-splide .splide__track {
+    width: 100%;
+    height: 100%;
+}
+
+.modal-splide .splide__track .splide__list {
+    width: 100%;
+    height: 100%;
+}
+  
+.modal-splide .splide__track .splide__list .splide__slide {
+    width: 100%;
+    height: 100%;
+}
+
+.modal-splide .splide__slide {
+    width: 100%;
+    object-fit: contain;
+}
+
+.modal-thumbnail-splide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.modal-thumbnail-splide .splide__slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.modal-thumbnail-splide .splide__slide {
+    opacity: 0.6;
+}
+  
+.modal-thumbnail-splide .splide__slide.is-active {
+    opacity: 1;
+}
+
+.splide__arrow {
+    background: transparent;
+}
+
+.splide__arrow .arrow-icon {
+    width: 2rem;
+    height: 2rem;
+}
+
+@media only screen and (max-width: 1024px) {
+    .chapter {
+        grid-column: span 2;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 0rem;
+    }
+
+    .chapter-navigation-bar {
+        grid-row: 2;
+        grid-column: span 2;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        white-space: nowrap;
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+    }
+
+    .chapter-navigation-bar::-webkit-scrollbar {
+        display: none;
+      }
+
+    .chapter-navigation-bar a, .chapter-category-navigation-bar a {
+        font-size: .9rem;
+    }
+
+    .chapter .chapter-image-container { 
+        width: 100%;
+        margin-top: 3.6rem;
+        height: fit-content;
+    }
+
+    .chapter .chapter-image-container > div {
+        display: flex;
+        background-color: none;
+        box-shadow: none;
+        margin-left: 0;
+        height: fit-content;
+    }
+
+    .chapter .chapter-image-container > div::before {
+        display: none;
+    }
+
+    .chapter .chapter-image-container > div > img {
+        height: 3.6rem;
+        width: 3.6rem;
+        object-fit: contain;
+        filter: brightness(70%);
+    }
+    
+    .chapter .chapter-content-container {
+        margin-top: 1.2rem;
+        gap: .6rem;
+        overflow: auto;
+    }
+
+    .chapter .chapter-content-container .chapter-content-title {
+        font-size: 1.5em;
+        line-height: 120%;
+    }
+
+    .chapter .chapter-content-container .chapter-content-date, .chapter .chapter-content-container .chapter-content-role {
+        font-size: 1em;
+    }
+
+    .chapter .chapter-content-container .chapter-list {
+        display: flex;
+        flex-direction: column;
+        gap: 1.2rem;
+        position: relative;
+        margin-top: .4rem;
+        height: 100%;
+    }
+
+    .chapter .chapter-content-container .chapter-list li {
+        font-size: .9em;
+    }
+
+    .chapter .chapter-content-container .chapter-list li:last-child {
+        /* padding-bottom: 2rem; */
+    }
+
+    .chapter-category p {
+        font-size: .9rem;
+    }
+/* 
+    .chapter .chapter-content-list-container {
+        -webkit-mask-image: linear-gradient(to bottom, var(--secondary-color) 90%, transparent 100%);
+        mask-image: linear-gradient(to bottom, var(--secondary-color) 90%, transparent 100%);
+    } */
+
+    .chapter .chapter-content-list-container .chapter-summary {
+        padding: 1rem 2rem;
+        background-size: 40px 20px;
+    }
+
+    .chapter .chapter-content-list-container .chapter-summary p {
+        font-size: .9rem;
+    }
+
+    .chapter .chapter-content-list-container .chapter-file {
+        background-size: 40px 20px;
+    }
+    
+    .chapter .chapter-content-list-container .chapter-file img {
+        width: 2.6rem;
+        height: 2.6rem;
+    }
+        
+    .chapter-content-list-container::-webkit-scrollbar { 
+        display: none;
+    }
+
+    .chapter-content-list-container::-webkit-scrollbar-track {
+        display: none;
+    }
+
+    .chapter-content-list-container::-webkit-scrollbar-thumb { 
+        display: none;
+    }
+
+    .chapter-content-list-container::-webkit-scrollbar-thumb:hover { 
+        display: none;
+    }
+
+    .chapter .chapter-content-list-container {
+        margin-top: 0;
+    }
+
+    .chapter .chapter-content-list-container .chapter-category .chapter-category-navigation-bar a {
+        margin: 0 .9rem;
+    }
+
+    .chapter .chapter-content-list-container .chapter-category .chapter-category-navigation-bar a:nth-child(1) {
+        margin-left: 0;
+    }
+
+    .modal .close img {
+        width: 1.2rem;
+        height: 1.2rem;
+    }
+
+    .chapter-image-container .splide {
+        display: flex;
+    }
+
+    .chapter-image-container .expand-image-carousel {
+        display: none;
+    }
+
+    .chapter-image-container .splide .splide__track .splide__list .splide__slide { 
+        cursor: pointer;
+    }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+    .chapter {
+        gap: 6rem;
+        width: 100%;
+    }
+
+    .chapter .chapter-image-container {
+        width: calc(46% - 4rem);
+    }
+
+    .chapter .chapter-content-container {
+        width: calc(54% - 4rem);
+    }
+ 
+    .chapter .chapter-image-container > div::before {
+        margin-top: -30px;
+        margin-left: -30px;
+        width: 200px; /* Width of the square */
+        height: 200px; /* Height of the square, same as width to make it a square */
+    }
+    .chapter .chapter-image-container > div > img {
+        height: 90px;
+        width: 90px;
+    }
+
+    .chapter .chapter-content-container .chapter-content-title {
+        font-size: 2.2em;
+        line-height: 120%;
+    }
+
+    .chapter .chapter-content-container .chapter-content-date, .chapter .chapter-content-container .chapter-content-role {
+        font-size: 1.2em;
+    }
+
+    .chapter .chapter-content-container .chapter-list li {
+        font-size: 1rem;
+    }
+
+    .chapter-category p {
+        font-size: .9rem;
+    }
+
+    .chapter .chapter-content-list-container .chapter-category .chapter-category-navigation-bar a {
+        margin: 0 .9rem;
+    }
+
+    .chapter .chapter-content-list-container .chapter-category .chapter-category-navigation-bar a:nth-child(1) {
+        margin-left: 0;
+    }
+
+    .chapter .chapter-content-list-container .chapter-summary {
+        padding: 1rem 2rem;
+        background-size: 40px 20px;
+    }
+
+    .chapter .chapter-content-list-container .chapter-summary p {
+        font-size: 1rem;
+    }
+
+    .chapter-navigation-bar {
+        overflow-x: scroll;
+        overflow-y: hidden;
+        white-space: nowrap;
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+        align-self: end;
+    }
+    
+    .chapter .chapter-image-container .expand-image-carousel {
+        height: 1.8rem;
+        width: 1.8rem;
+    }
+
+    .splide__arrow .arrow-icon {
+        width: 1.8rem;
+        height: 1.8rem;
+    }
+
+    .close {
+        right: 2.6rem;
+        top: 2.6rem;
+    }
+
+    .modal .close img {
+        width: 1.3rem;
+        height: 1.3rem;
+    }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1900px) {
+    .chapter {
+        gap: 10rem;
+        width: 100%;
+    }
+
+    .chapter .chapter-image-container {
+        width: calc(44% - 5rem);
+        justify-content: end;
+    }
+
+    .chapter .chapter-content-container {
+        width: calc(56% - 5rem);
+    }
+ 
+    .chapter .chapter-image-container > div::before {
+        width: 320px; /* Width of the square */
+        height: 320px; /* Height of the square, same as width to make it a square */
+    }
+
+    .chapter .chapter-image-container > div > img {
+        height: 110px;
+        width: 110px;
+    }
+
+    .chapter .chapter-content-container .chapter-content-title {
+        font-size: 2.4em;
+    }
+
+    .chapter .chapter-content-container .chapter-content-date, .chapter .chapter-content-container .chapter-content-role {
+        font-size: 1.2em;
+    }
+
+    .chapter .chapter-content-container .chapter-list li {
+        font-size: 1rem;
+    }
+
+    .chapter-category p {
+        font-size: 1rem;
+    }
+
+    .chapter .chapter-content-list-container .chapter-category .chapter-category-navigation-bar a {
+        margin: 0 .9rem;
+    }
+
+    .chapter .chapter-content-list-container .chapter-category .chapter-category-navigation-bar a:nth-child(1) {
+        margin-left: 0;
+    }
+
+    .chapter .chapter-content-list-container .chapter-summary {
+        padding: 1rem 2rem;
+        background-size: 40px 20px;
+    }
+
+    .chapter .chapter-content-list-container .chapter-summary p {
+        font-size: 1rem;
+    }
+
+
+    .chapter-navigation-bar {
+        overflow-x: scroll;
+        overflow-y: hidden;
+        white-space: nowrap;
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+        align-self: end;
+    }
+}
