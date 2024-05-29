@@ -1,0 +1,289 @@
+{
+  ".svelte-kit/generated/server/internal.js": {
+    "file": "internal.js",
+    "name": "internal",
+    "src": ".svelte-kit/generated/server/internal.js",
+    "isEntry": true,
+    "imports": [
+      "_internal.js",
+      "_paths.js"
+    ]
+  },
+  "_cross.js": {
+    "file": "chunks/cross.js",
+    "name": "cross"
+  },
+  "_exports.js": {
+    "file": "chunks/exports.js",
+    "name": "exports"
+  },
+  "_index.js": {
+    "file": "chunks/index.js",
+    "name": "index"
+  },
+  "_internal.js": {
+    "file": "chunks/internal.js",
+    "name": "internal",
+    "imports": [
+      "_ssr.js",
+      "_paths.js"
+    ]
+  },
+  "_paths.js": {
+    "file": "chunks/paths.js",
+    "name": "paths"
+  },
+  "_ssr.js": {
+    "file": "chunks/ssr.js",
+    "name": "ssr"
+  },
+  "_stores.js": {
+    "file": "chunks/stores.js",
+    "name": "stores",
+    "imports": [
+      "_ssr.js",
+      "_exports.js"
+    ]
+  },
+  "node_modules/@sveltejs/kit/src/runtime/components/error.svelte": {
+    "file": "entries/fallbacks/error.svelte.js",
+    "name": "entries/fallbacks/error.svelte",
+    "src": "node_modules/@sveltejs/kit/src/runtime/components/error.svelte",
+    "isEntry": true,
+    "imports": [
+      "_ssr.js",
+      "_stores.js"
+    ]
+  },
+  "node_modules/@sveltejs/kit/src/runtime/server/index.js": {
+    "file": "index.js",
+    "name": "index",
+    "src": "node_modules/@sveltejs/kit/src/runtime/server/index.js",
+    "isEntry": true,
+    "imports": [
+      "_paths.js",
+      "_index.js",
+      "_exports.js",
+      "_ssr.js",
+      "_internal.js"
+    ]
+  },
+  "src/lib/images/certification/aws-cloud-practitioner-badge.png": {
+    "file": "_app/immutable/assets/aws-cloud-practitioner-badge.Bf_gp8J8.png",
+    "src": "src/lib/images/certification/aws-cloud-practitioner-badge.png"
+  },
+  "src/lib/images/certification/aws-cloud-practitioner-certificate.png": {
+    "file": "_app/immutable/assets/aws-cloud-practitioner-certificate.Bra18Xc0.png",
+    "src": "src/lib/images/certification/aws-cloud-practitioner-certificate.png"
+  },
+  "src/lib/images/certification/aws-sa-badge.png": {
+    "file": "_app/immutable/assets/aws-sa-badge.D5jP5S1b.png",
+    "src": "src/lib/images/certification/aws-sa-badge.png"
+  },
+  "src/lib/images/certification/aws-sa-certificate.png": {
+    "file": "_app/immutable/assets/aws-sa-certificate.BxE0Sd6F.png",
+    "src": "src/lib/images/certification/aws-sa-certificate.png"
+  },
+  "src/lib/images/certification/flutter-certificate.jpg": {
+    "file": "_app/immutable/assets/flutter-certificate.dK8UOkef.jpg",
+    "src": "src/lib/images/certification/flutter-certificate.jpg"
+  },
+  "src/lib/images/certification/flutter.png": {
+    "file": "_app/immutable/assets/flutter.9RIUM0rv.png",
+    "src": "src/lib/images/certification/flutter.png"
+  },
+  "src/lib/images/education/high-school.png": {
+    "file": "_app/immutable/assets/high-school.Cc5fOJ46.png",
+    "src": "src/lib/images/education/high-school.png"
+  },
+  "src/lib/images/education/university.png": {
+    "file": "_app/immutable/assets/university.Pj9xtbps.png",
+    "src": "src/lib/images/education/university.png"
+  },
+  "src/lib/images/experience/tsp.png": {
+    "file": "_app/immutable/assets/tsp.5Ept1rup.png",
+    "src": "src/lib/images/experience/tsp.png"
+  },
+  "src/lib/images/home/profile-landscape.jpg": {
+    "file": "_app/immutable/assets/profile-landscape.C7JISX7R.jpg",
+    "src": "src/lib/images/home/profile-landscape.jpg"
+  },
+  "src/lib/images/home/profile-portrait.jpg": {
+    "file": "_app/immutable/assets/profile-portrait.Bgi8ZXk4.jpg",
+    "src": "src/lib/images/home/profile-portrait.jpg"
+  },
+  "src/lib/images/portfolio/accommodation-management/am-picture-1.png": {
+    "file": "_app/immutable/assets/am-picture-1.CxLxIdZW.png",
+    "src": "src/lib/images/portfolio/accommodation-management/am-picture-1.png"
+  },
+  "src/lib/images/portfolio/accommodation-management/am-picture-2.png": {
+    "file": "_app/immutable/assets/am-picture-2.DCqOCMj5.png",
+    "src": "src/lib/images/portfolio/accommodation-management/am-picture-2.png"
+  },
+  "src/lib/images/portfolio/accommodation-management/am-picture-3.png": {
+    "file": "_app/immutable/assets/am-picture-3.CqxgyUbX.png",
+    "src": "src/lib/images/portfolio/accommodation-management/am-picture-3.png"
+  },
+  "src/lib/images/portfolio/accommodation-management/am-picture-4.png": {
+    "file": "_app/immutable/assets/am-picture-4.B_X06T_7.png",
+    "src": "src/lib/images/portfolio/accommodation-management/am-picture-4.png"
+  },
+  "src/lib/images/portfolio/accommodation-management/am-picture-5.png": {
+    "file": "_app/immutable/assets/am-picture-5.CQVRFJHB.png",
+    "src": "src/lib/images/portfolio/accommodation-management/am-picture-5.png"
+  },
+  "src/lib/images/portfolio/cyberbullying-detection/cds-picture-1.png": {
+    "file": "_app/immutable/assets/cds-picture-1.CyL8r3yj.png",
+    "src": "src/lib/images/portfolio/cyberbullying-detection/cds-picture-1.png"
+  },
+  "src/lib/images/portfolio/cyberbullying-detection/cds-picture-2.png": {
+    "file": "_app/immutable/assets/cds-picture-2.BXvpe2b4.png",
+    "src": "src/lib/images/portfolio/cyberbullying-detection/cds-picture-2.png"
+  },
+  "src/lib/images/portfolio/cyberbullying-detection/cds-picture-3.png": {
+    "file": "_app/immutable/assets/cds-picture-3.BzpwYWLw.png",
+    "src": "src/lib/images/portfolio/cyberbullying-detection/cds-picture-3.png"
+  },
+  "src/lib/images/portfolio/cyberbullying-detection/cds-picture-4.png": {
+    "file": "_app/immutable/assets/cds-picture-4.Cj0o2N8b.png",
+    "src": "src/lib/images/portfolio/cyberbullying-detection/cds-picture-4.png"
+  },
+  "src/lib/images/portfolio/cyberbullying-detection/cds-picture-5.png": {
+    "file": "_app/immutable/assets/cds-picture-5.CgnE067V.png",
+    "src": "src/lib/images/portfolio/cyberbullying-detection/cds-picture-5.png"
+  },
+  "src/lib/images/portfolio/cyberbullying-detection/cds-picture-6.png": {
+    "file": "_app/immutable/assets/cds-picture-6.ReTiV3kW.png",
+    "src": "src/lib/images/portfolio/cyberbullying-detection/cds-picture-6.png"
+  },
+  "src/lib/images/portfolio/cyberbullying-detection/cds-picture-7.png": {
+    "file": "_app/immutable/assets/cds-picture-7.C8oPqS4g.png",
+    "src": "src/lib/images/portfolio/cyberbullying-detection/cds-picture-7.png"
+  },
+  "src/lib/images/portfolio/cyberbullying-detection/cds-picture-8.png": {
+    "file": "_app/immutable/assets/cds-picture-8.BIQvmk02.png",
+    "src": "src/lib/images/portfolio/cyberbullying-detection/cds-picture-8.png"
+  },
+  "src/lib/images/portfolio/dengue-report/dr-picture-1.png": {
+    "file": "_app/immutable/assets/dr-picture-1.D_Mvg5bJ.png",
+    "src": "src/lib/images/portfolio/dengue-report/dr-picture-1.png"
+  },
+  "src/lib/images/portfolio/dengue-report/dr-picture-2.png": {
+    "file": "_app/immutable/assets/dr-picture-2.DXaajK93.png",
+    "src": "src/lib/images/portfolio/dengue-report/dr-picture-2.png"
+  },
+  "src/lib/images/portfolio/restaurant-reservation/rr-picture-1.png": {
+    "file": "_app/immutable/assets/rr-picture-1.hu9cg4IM.png",
+    "src": "src/lib/images/portfolio/restaurant-reservation/rr-picture-1.png"
+  },
+  "src/lib/images/portfolio/restaurant-reservation/rr-picture-2.png": {
+    "file": "_app/immutable/assets/rr-picture-2.BQTDfPJf.png",
+    "src": "src/lib/images/portfolio/restaurant-reservation/rr-picture-2.png"
+  },
+  "src/lib/images/portfolio/restaurant-reservation/rr-picture-3.png": {
+    "file": "_app/immutable/assets/rr-picture-3.DyfENlcI.png",
+    "src": "src/lib/images/portfolio/restaurant-reservation/rr-picture-3.png"
+  },
+  "src/lib/images/portfolio/restaurant-reservation/rr-picture-4.png": {
+    "file": "_app/immutable/assets/rr-picture-4.CJpPKkjg.png",
+    "src": "src/lib/images/portfolio/restaurant-reservation/rr-picture-4.png"
+  },
+  "src/lib/images/portfolio/restaurant-reservation/rr-picture-5.png": {
+    "file": "_app/immutable/assets/rr-picture-5.e2aiQC_b.png",
+    "src": "src/lib/images/portfolio/restaurant-reservation/rr-picture-5.png"
+  },
+  "src/params/navigation.js": {
+    "file": "entries/matchers/navigation.js",
+    "name": "entries/matchers/navigation",
+    "src": "src/params/navigation.js",
+    "isEntry": true
+  },
+  "src/routes/+layout.svelte": {
+    "file": "entries/pages/_layout.svelte.js",
+    "name": "entries/pages/_layout.svelte",
+    "src": "src/routes/+layout.svelte",
+    "isEntry": true,
+    "imports": [
+      "_ssr.js",
+      "_stores.js",
+      "_paths.js",
+      "_cross.js"
+    ]
+  },
+  "src/routes/+page.server.js": {
+    "file": "entries/pages/_page.server.js",
+    "name": "entries/pages/_page.server",
+    "src": "src/routes/+page.server.js",
+    "isEntry": true
+  },
+  "src/routes/+page.svelte": {
+    "file": "entries/pages/_page.svelte.js",
+    "name": "entries/pages/_page.svelte",
+    "src": "src/routes/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_ssr.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.wzcAbiC-.css"
+    ],
+    "assets": [
+      "_app/immutable/assets/profile-landscape.C7JISX7R.jpg",
+      "_app/immutable/assets/profile-portrait.Bgi8ZXk4.jpg"
+    ]
+  },
+  "src/routes/[slug=navigation]/+page.server.js": {
+    "file": "entries/pages/_slug_navigation_/_page.server.js",
+    "name": "entries/pages/_slug_navigation_/_page.server",
+    "src": "src/routes/[slug=navigation]/+page.server.js",
+    "isEntry": true,
+    "imports": [
+      "_index.js"
+    ],
+    "assets": [
+      "_app/immutable/assets/university.Pj9xtbps.png",
+      "_app/immutable/assets/high-school.Cc5fOJ46.png",
+      "_app/immutable/assets/tsp.5Ept1rup.png",
+      "_app/immutable/assets/cds-picture-1.CyL8r3yj.png",
+      "_app/immutable/assets/cds-picture-2.BXvpe2b4.png",
+      "_app/immutable/assets/cds-picture-3.BzpwYWLw.png",
+      "_app/immutable/assets/cds-picture-4.Cj0o2N8b.png",
+      "_app/immutable/assets/cds-picture-5.CgnE067V.png",
+      "_app/immutable/assets/cds-picture-6.ReTiV3kW.png",
+      "_app/immutable/assets/cds-picture-7.C8oPqS4g.png",
+      "_app/immutable/assets/cds-picture-8.BIQvmk02.png",
+      "_app/immutable/assets/dr-picture-1.D_Mvg5bJ.png",
+      "_app/immutable/assets/dr-picture-2.DXaajK93.png",
+      "_app/immutable/assets/am-picture-1.CxLxIdZW.png",
+      "_app/immutable/assets/am-picture-2.DCqOCMj5.png",
+      "_app/immutable/assets/am-picture-3.CqxgyUbX.png",
+      "_app/immutable/assets/am-picture-4.B_X06T_7.png",
+      "_app/immutable/assets/am-picture-5.CQVRFJHB.png",
+      "_app/immutable/assets/rr-picture-1.hu9cg4IM.png",
+      "_app/immutable/assets/rr-picture-2.BQTDfPJf.png",
+      "_app/immutable/assets/rr-picture-3.DyfENlcI.png",
+      "_app/immutable/assets/rr-picture-4.CJpPKkjg.png",
+      "_app/immutable/assets/rr-picture-5.e2aiQC_b.png",
+      "_app/immutable/assets/aws-sa-badge.D5jP5S1b.png",
+      "_app/immutable/assets/aws-sa-certificate.BxE0Sd6F.png",
+      "_app/immutable/assets/aws-cloud-practitioner-badge.Bf_gp8J8.png",
+      "_app/immutable/assets/aws-cloud-practitioner-certificate.Bra18Xc0.png",
+      "_app/immutable/assets/flutter.9RIUM0rv.png",
+      "_app/immutable/assets/flutter-certificate.dK8UOkef.jpg"
+    ]
+  },
+  "src/routes/[slug=navigation]/+page.svelte": {
+    "file": "entries/pages/_slug_navigation_/_page.svelte.js",
+    "name": "entries/pages/_slug_navigation_/_page.svelte",
+    "src": "src/routes/[slug=navigation]/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_ssr.js",
+      "_cross.js",
+      "_stores.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.CJnFeh9J.css"
+    ]
+  }
+}
