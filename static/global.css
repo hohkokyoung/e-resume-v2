@@ -20,6 +20,10 @@
     outline: none;
 }
 
+html {
+  height: 100%;
+}
+
 body {
     background-color: var(--secondary-color);
     height: 100%;
