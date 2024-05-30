@@ -66,7 +66,7 @@
     <button type="button" on:click={openMainNavigationBar} class="expand-navigation mobile-only">
         <img src={HamburgerHalfIcon} alt="hamburger half menu icon" />
     </button>
-    <div id="mainNavigationBarBackground" class="main-navigation-bar-background mobile-only"></div>
+    <button on:click={closeMainNavigationBar} id="mainNavigationBarBackground" class="main-navigation-bar-background mobile-only"></button>
     <nav id="mainNavigationBar" class="navigation-bar main-navigation-bar">
         <button type="button" on:click={closeMainNavigationBar} class="contract-navigation mobile-only">
             <img src={CrossIcon} alt="cross icon" />

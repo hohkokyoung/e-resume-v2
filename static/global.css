@@ -50,8 +50,9 @@ a:active {
   color: bottom;
 }
 
-button {
+button, a {
   cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .splash-container {
