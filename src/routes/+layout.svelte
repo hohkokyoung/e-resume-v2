@@ -32,7 +32,7 @@
 
         mainNavigationBar.style.right = 0;
         mainNavigationBarBackground.style.opacity = 1;
-        mainNavigationBarBackground.style.zIndex = 1;
+        mainNavigationBarBackground.style.zIndex = 3;
     }
 
     function closeMainNavigationBar() {

@@ -112,7 +112,7 @@
         z-index: -1;
         left: 0;
         opacity: 0;
-        transition: 1s all;
+        transition: 1s opacity;
         background-color: rgba(0,0,0,0.9); 
         overflow: hidden;
     }
@@ -129,7 +129,7 @@
         width: 70%;
         align-items: end;
         justify-content: space-between;
-        z-index: 2;
+        z-index: 3;
     }
 
     .layout .main-navigation-bar {

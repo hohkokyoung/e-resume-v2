@@ -64,16 +64,15 @@
                 fixedWidth : 100,
                 fixedHeight: 60,
                 gap: 10,
-                rewind: false,
                 pagination: false,
                 isNavigation: true,
             });
             
             splide.sync(modalSplide);
-            splide.sync(modalThumbnailSplide);
+            !isMobile && splide.sync(modalThumbnailSplide);
             splide.mount();
             modalSplide.mount();
-            modalThumbnailSplide.mount();
+            !isMobile && modalThumbnailSplide.mount();
         } catch(error) {}
     }
 
@@ -102,7 +101,7 @@
         
         var modal = document.getElementById("modal");
         modal.style.opacity = 1;
-        modal.style.zIndex = 1;
+        modal.style.zIndex = 3;
     }
 
     function closeModal() {
