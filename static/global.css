@@ -22,7 +22,7 @@
 
 body {
     background-color: var(--secondary-color);
-    height: 100vh;
+    height: 100%;
     width: 100vw;
     overflow: hidden;
 }
