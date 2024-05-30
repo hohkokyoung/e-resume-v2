@@ -72,11 +72,11 @@
             <img src={CrossIcon} alt="cross icon" />
         </button>
         <div class="navigation-bar-container">
-            <a href="{base}/" on:click={closeMainNavigationBar} aria-current={$page.url.pathname == "/"}>Home</a>
-            <a href="{base}/education" on:click={closeMainNavigationBar} aria-current={$page.url.pathname == "/education"}>Education</a>
-            <a href="{base}/experience" on:click={closeMainNavigationBar} aria-current={$page.url.pathname == "/experience"}>Experience</a>
-            <a href="{base}/portfolio" on:click={closeMainNavigationBar} aria-current={$page.url.pathname == "/portfolio"}>Portfolio</a>
-            <a href="{base}/certification" on:click={closeMainNavigationBar} aria-current={$page.url.pathname == "/certification"}>Certification</a>
+            <a href="/" on:click={closeMainNavigationBar} aria-current={$page.url.pathname == "/"}>Home</a>
+            <a href="/education" on:click={closeMainNavigationBar} aria-current={$page.url.pathname == "/education"}>Education</a>
+            <a href="/experience" on:click={closeMainNavigationBar} aria-current={$page.url.pathname == "/experience"}>Experience</a>
+            <a href="/portfolio" on:click={closeMainNavigationBar} aria-current={$page.url.pathname == "/portfolio"}>Portfolio</a>
+            <a href="/certification" on:click={closeMainNavigationBar} aria-current={$page.url.pathname == "/certification"}>Certification</a>
         </div>
         <div class="mobile-only footer">
             <button class="expand-icon" on:click={toggleFullScreen}>
