@@ -87,7 +87,7 @@ const navigationsData = {
                     HighSchoolLogo
                 ],
                 title: "SMK Seri Kembangan",
-                date: "2017 - 2012",
+                date: "2016 - 2012",
                 role: null,
                 categories: [
                     {
