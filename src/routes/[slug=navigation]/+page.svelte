@@ -56,7 +56,7 @@
 
             modalSplide = new Splide(".modal-splide", {
                 perPage: 1,
-                pagination: true,
+                pagination: false,
                 arrows: false,
             });
 
@@ -80,9 +80,6 @@
         isMobile = window.matchMedia("only screen and (max-width: 1024px)");
 
         window.addEventListener("resize", checkOverflowAndApplyMargin);
-        splide.refresh()
-        modalSplide.refresh()
-        modalThumbnailSplide.refresh()
 
         return(() => {
             window.removeEventListener("resize", checkOverflowAndApplyMargin);
