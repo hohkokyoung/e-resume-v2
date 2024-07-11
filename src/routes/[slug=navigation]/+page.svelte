@@ -56,7 +56,7 @@
 
             modalSplide = new Splide(".modal-splide", {
                 perPage: 1,
-                pagination: false,
+                pagination: true,
                 arrows: false,
             });
 
