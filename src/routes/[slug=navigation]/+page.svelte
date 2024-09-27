@@ -36,6 +36,14 @@
     }
 
     function handleSplide() {
+        const paginationContainer = document.querySelector('.splide__pagination.splide__pagination--ltr');
+
+        // Get all <li> elements inside the container
+        const listItems = paginationContainer?.querySelectorAll('li');
+
+        // Loop through each <li> element and remove it
+        listItems?.forEach(item => item.remove());
+
         try {
             splide = new Splide(".image-carousel-splide", {
                 pagination: false,
@@ -67,7 +75,7 @@
                 pagination: false,
                 isNavigation: true,
             });
-            
+        
             splide.sync(modalSplide);
             !isMobile && splide.sync(modalThumbnailSplide);
             splide.mount();
@@ -80,7 +88,6 @@
         isMobile = window.matchMedia("only screen and (max-width: 1024px)");
 
         window.addEventListener("resize", checkOverflowAndApplyMargin);
-        splide.destroy()
 
         return(() => {
             window.removeEventListener("resize", checkOverflowAndApplyMargin);
