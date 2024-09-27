@@ -80,6 +80,7 @@
         isMobile = window.matchMedia("only screen and (max-width: 1024px)");
 
         window.addEventListener("resize", checkOverflowAndApplyMargin);
+        splide.destroy()
 
         return(() => {
             window.removeEventListener("resize", checkOverflowAndApplyMargin);
